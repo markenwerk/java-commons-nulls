@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Torsten Krause, Markenwerk GmbH
+ * Copyright (c) 2016 Torsten Krause, Markenwerk GmbH
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -28,9 +28,15 @@ import java.io.Writer;
  * A {@link NullWriter} is a {@link Writer} that does nothing.
  * 
  * @author Torsten Krause (tk at markenwerk dot net)
- * @since 3.0.0
+ * @since 1.0.0
  */
 public class NullWriter extends Writer {
+
+	/**
+	 * Creates a new {@link NullWriter}.
+	 */
+	public NullWriter() {
+	}
 
 	@Override
 	public void write(char[] buffer, int offset, int length) throws IOException {

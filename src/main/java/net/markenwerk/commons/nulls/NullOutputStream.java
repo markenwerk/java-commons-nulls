@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Torsten Krause, Markenwerk GmbH
+ * Copyright (c) 2016 Torsten Krause, Markenwerk GmbH
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -28,9 +28,15 @@ import java.io.OutputStream;
  * A {@link NullOutputStream} is an {@link OutputStream} that does nothing.
  * 
  * @author Torsten Krause (tk at markenwerk dot net)
- * @since 2.1.0
+ * @since 1.0.0
  */
 public class NullOutputStream extends OutputStream {
+
+	/**
+	 * Creates a new {@link NullOutputStream}.
+	 */
+	public NullOutputStream() {
+	}
 
 	@Override
 	public void write(int b) throws IOException {

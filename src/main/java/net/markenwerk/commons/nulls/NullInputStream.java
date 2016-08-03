@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Torsten Krause, Markenwerk GmbH
+ * Copyright (c) 2016 Torsten Krause, Markenwerk GmbH
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,6 +31,12 @@ import java.io.InputStream;
  * @since 1.0.0
  */
 public class NullInputStream extends InputStream {
+
+	/**
+	 * Creates a new {@link NullInputStream}.
+	 */
+	public NullInputStream() {
+	}
 
 	@Override
 	public int read() throws IOException {
