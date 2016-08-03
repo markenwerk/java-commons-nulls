@@ -40,7 +40,7 @@ InputStream in = new NullInputStream();
 OutputStream in = new NullOutputStream();
 ```
 
-### `InputStream` and `OutputStream`
+### `Reader` and `Writer`
 
 This library provides [`NullReader`][NullReader] as a null implementation of a [`Reader`][Reader] and [`NullWriter`][NullWriter] as a null implementation of a [`Writer`][Writer].
 
